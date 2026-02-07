@@ -1,0 +1,16 @@
+.input-wrapper {
+  flex: 1;
+}
+
+.input-label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: var(--spacing-xs);
+}
+
+.guests-error {
+  display: block;
+  margin-top: var(--spacing-xs);
+  margin-left: 56px;
+}

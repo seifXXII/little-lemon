@@ -1,0 +1,104 @@
+.reservation-form {
+  padding: var(--spacing-lg) var(--spacing-md);
+  max-width: 428px;
+  margin: 0 auto;
+}
+
+.form-divider {
+  height: 1px;
+  background-color: var(--color-gray-border);
+  margin: var(--spacing-md) 0;
+}
+
+.special-requests {
+  margin-bottom: var(--spacing-md);
+}
+
+.textarea {
+  resize: none;
+  min-height: 80px;
+  width: 100%;
+}
+
+.submit-btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: var(--spacing-sm) var(--spacing-xl);
+}
+
+/* Desktop layout improvements */
+@media (min-width: 768px) {
+  .reservation-form {
+    max-width: 600px;
+    padding: var(--spacing-xl) var(--spacing-xxl);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    margin-top: calc(-1 * var(--spacing-lg));
+    position: relative;
+    z-index: 10;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .special-requests {
+    margin-top: var(--spacing-md);
+  }
+
+  .textarea {
+    min-height: 100px;
+  }
+
+  .submit-btn {
+    width: 240px;
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: 18px;
+  }
+}
+
+/* Error styles */
+.error-message {
+  display: block;
+  color: #d32f2f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.input-error {
+  border-color: #d32f2f !important;
+}
+
+.submit-error {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Fieldset reset */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .reservation-form {
+    max-width: 700px;
+    padding: var(--spacing-xxl);
+  }
+}
