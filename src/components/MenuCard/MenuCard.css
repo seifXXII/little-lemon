@@ -37,11 +37,7 @@
 }
 
 .menu-card-image {
-  width: 80px;
-  height: 80px;
-  border-radius: var(--border-radius-sm);
-  overflow: hidden;
-  flex-shrink: 0;
+  display: none; /* Hidden on mobile per design mockup */
 }
 
 .menu-card-image img {
@@ -57,8 +53,12 @@
   }
 
   .menu-card-image {
+    display: block;
     width: 100px;
     height: 100px;
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    flex-shrink: 0;
   }
 
   .menu-card-description {
